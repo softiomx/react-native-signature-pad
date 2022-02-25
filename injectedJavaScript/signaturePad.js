@@ -307,7 +307,7 @@ var content = `var SignaturePad = (function (document) {
   };
 
   SignaturePad.prototype._strokeWidth = function (velocity) {
-    return Math.max(this.maxWidth / (velocity + 1), this.minWidth);
+    return Math.max(this.maxWidth / (velocity + 1), this.minWidth) + 7;
   };
 
 
